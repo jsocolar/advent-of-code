@@ -16,6 +16,9 @@ with open('/Users/jacobsocolar/Dropbox/Work/Code/advent_of_code/2022/inputs/day_
     lines = f.readlines()
 
 lines2 = [e.strip() for e in lines]
+
+
+
 lengths = [len(e) for e in lines2]
 lines_split = [[*e] for e in lines2]
 
