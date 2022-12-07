@@ -35,7 +35,8 @@ dir_checked = [] # will tell us whether we've already run ls from the correspond
 dir_sizes = [] # will tell us the size of the directory
 current_path = [] # will store the current path
 
-checking = False
+checking = False # if we see a file size, should we add it to the size of the directory?
+# (designed to handle what happens if we run ls when dir_checked is already True)
 for i in lines:
     if bool(cd_check(i)) or bool(ls_check(i)):
         checking = False
