@@ -41,7 +41,6 @@ for i in lines:
     if bool(cd_check(i)) or bool(ls_check(i)):
         checking = False
     if cd_check(i):
-        checking = False
         if enter_check(i):
             if i == "cd /":
                 current_path = ["/"]
